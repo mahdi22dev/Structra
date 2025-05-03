@@ -7,9 +7,10 @@
   "targets": {
     "build": {
       "executor": "@nx-go/nx-go:build",
-      "outputs": ["{workspaceRoot}/apps/api"],
       "options": {
-        "main": "{projectRoot}/main.go"
+        "main": "{projectRoot}/main.go",
+        "outputPath": "{projectRoot}/bin",
+        "binaryName": "api"
       }
     },
     "dev": {
