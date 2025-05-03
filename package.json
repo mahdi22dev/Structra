@@ -2,17 +2,31 @@
   "name": "@structra/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "dev": "nx run-many -t=dev -p ui api --parallel",
+    "build": "nx run-many -t=build -p ui api --parallel"
+  },
   "private": true,
-  "dependencies": {},
   "devDependencies": {
     "@nx/js": "20.8.1",
+    "@nx/next": "20.8.1",
     "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.6.0",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@types/react": "19.0.0",
+    "@types/react-dom": "19.0.0",
+    "autoprefixer": "10.4.13",
     "nx": "20.8.1",
+    "postcss": "8.4.38",
     "prettier": "^2.6.2",
+    "tailwindcss": "3.4.3",
     "tslib": "^2.3.0",
     "typescript": "~5.7.2"
+  },
+  "dependencies": {
+    "next": "~15.2.4",
+    "react": "19.0.0",
+    "react-dom": "19.0.0"
   }
 }
